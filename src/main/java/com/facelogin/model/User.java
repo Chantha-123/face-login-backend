@@ -22,6 +22,10 @@ public class User {
     @Column(name = "face_image_path")
     private String faceImagePath;
     
+    
+    @Column(name = "telegram_Chat_Id")
+    private String telegramChatId; 
+    
     public User() {}
     
     public User(String username, String email) {
@@ -44,4 +48,14 @@ public class User {
     
     public String getFaceImagePath() { return faceImagePath; }
     public void setFaceImagePath(String faceImagePath) { this.faceImagePath = faceImagePath; }
+
+	public String getTelegramChatId() {
+		return telegramChatId;
+	}
+
+	public void setTelegramChatId(String telegramChatId) {
+		this.telegramChatId = telegramChatId;
+	}
+    
+    
 }
