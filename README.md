@@ -133,6 +133,10 @@ lsof -i :5005
 Kill port
 kill -9 12345 
 
+<!-- Build PackageWar for tomcat -->
+./mvnw clean package -DskipTests
+
+
 
 
 
